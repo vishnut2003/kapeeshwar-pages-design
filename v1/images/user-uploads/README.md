@@ -1,0 +1,1 @@
+The user will provide the images in this folder.

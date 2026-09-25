@@ -1,0 +1,1 @@
+Images downloading or generting by claude will upload to this folder only.
