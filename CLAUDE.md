@@ -32,15 +32,15 @@ v1/                     # Design round 1 (new rounds → v2/, v3/ … copy forwa
 ## Brand direction (from the client's product creative)
 
 - **Mood:** premium, warm, traditional and Ayurvedic, handcrafted, pure.
-- **Colors:**
-  - Deep brown/near-black backgrounds (~`#1E140C`–`#2B1D12`)
-  - Ghee gold/yellow accent (~`#F2B51D`), used for headings, icon circles and highlight bars
-  - Brand red for the logo and CTAs (~`#C8202F`)
-  - White/cream for body text on dark backgrounds
-- **Type:**
-  - Big bold serif for headlines (e.g. Playfair Display / DM Serif Display)
-  - Clean sans for body and UI (e.g. Poppins / Roboto)
-  - The logo is a red script wordmark: "Kapeeshwar Ayurveda."
+- **Colors (confirmed by client):**
+  - Primary: `#BB1D1D` (brand red): logo, CTAs, key accents
+  - Secondary: `#F1BF26` (ghee gold): headings on dark backgrounds, icon circles, highlight bars
+  - Supporting neutrals (from the creative, not client-specified): deep brown/near-black backgrounds (~`#1E140C`–`#2B1D12`), white/cream text on dark backgrounds
+- **Type (confirmed by client):**
+  - Headings: **Poppins**
+  - All other text (body, UI, buttons, forms): **Inter**
+  - Load both from Google Fonts
+  - The logo is a red script wordmark ("Kapeeshwar Ayurveda."). Use the logo image, not a font.
 - **Motifs:**
   - Golden ghee pours
   - Glass matka-shaped jar with a black lid
