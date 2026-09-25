@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<ellipse cx="200" cy="376" rx="118" ry="11" fill="#000" opacity=".12"/>
+<path d="M250 40 h40 v30 h-40z" fill="#BB1D1D"/>
+<path d="M110 70 h170 l30 30 v262 h-200z" fill="#F1BF26" stroke="#C98E0A" stroke-width="3"/>
+<path d="M130 70 v-28 h60 v28" fill="none" stroke="#8a6a10" stroke-width="10" stroke-linecap="round"/>
+<rect x="110" y="150" width="200" height="160" fill="#BB1D1D"/>
+<text x="210" y="206" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="30" fill="#fff">Kapeeshwar</text>
+<text x="210" y="228" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#fff">Ayurveda.</text>
+<text x="210" y="264" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="#F1BF26">MUSTARD OIL 5L</text>
+<text x="210" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#fff">WOOD-PRESSED OIL</text>
+</svg>

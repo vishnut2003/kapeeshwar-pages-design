@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<defs><linearGradient id="m" x1="0" x2="1"><stop offset="0" stop-color="#9a9a9a"/><stop offset=".25" stop-color="#eee"/><stop offset=".6" stop-color="#bdbdbd"/><stop offset="1" stop-color="#8a8a8a"/></linearGradient></defs>
+<ellipse cx="200" cy="374" rx="112" ry="12" fill="#000" opacity=".12"/>
+<rect x="160" y="30" width="80" height="26" rx="6" fill="#BB1D1D"/>
+<path d="M105 60 h190 l12 12 v288 h-214 v-288z" fill="url(#m)" stroke="#888" stroke-width="2"/>
+<rect x="93" y="120" width="214" height="190" fill="#BB1D1D"/>
+<rect x="93" y="120" width="214" height="10" fill="#F1BF26"/><rect x="93" y="300" width="214" height="10" fill="#F1BF26"/>
+<text x="200" y="182" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="32" fill="#fff">Kapeeshwar</text>
+<text x="200" y="206" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="18" fill="#fff">Ayurveda.</text>
+<text x="200" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="17" fill="#F1BF26">A2 DESI COW GHEE</text>
+<text x="200" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#fff">BILONA METHOD</text>
+</svg>

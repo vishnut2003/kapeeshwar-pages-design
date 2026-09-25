@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<defs>
+<radialGradient id="g" cx="40%" cy="45%" r="65%"><stop offset="0" stop-color="#FFD85A"/><stop offset=".6" stop-color="#F1BF26"/><stop offset="1" stop-color="#D99A0B"/></radialGradient>
+<linearGradient id="lid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3a3a"/><stop offset=".5" stop-color="#111"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="hl" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+</defs>
+<ellipse cx="200" cy="372" rx="120" ry="12" fill="#000" opacity=".12"/>
+<path d="M140 92 h120 v22 c52 18 88 62 88 124 c0 78 -58 132 -148 132 s-148 -54 -148 -132 c0 -62 36 -106 88 -124z" fill="url(#g)" stroke="#C98E0A" stroke-width="3"/>
+<path d="M92 170 c-24 40 -22 110 16 150" stroke="url(#hl)" stroke-width="14" fill="none" stroke-linecap="round"/>
+<rect x="118" y="52" width="164" height="48" rx="12" fill="url(#lid)"/>
+<rect x="118" y="92" width="164" height="10" rx="4" fill="#000"/>
+<ellipse cx="200" cy="232" rx="98" ry="62" fill="#FFF8EC" opacity=".93"/>
+<text x="200" y="222" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="30" fill="#BB1D1D">Kapeeshwar</text>
+<text x="200" y="246" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="17" fill="#BB1D1D">Ayurveda.</text>
+<text x="200" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="#1F2E5A">A2 DESI COW GHEE</text>
+</svg>
