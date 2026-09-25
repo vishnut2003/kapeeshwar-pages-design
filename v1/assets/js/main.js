@@ -80,34 +80,6 @@ function renderRow(el) {
 
 function icons() { if (window.lucide) lucide.createIcons(); }
 
-/* ---------- Filtering (category tabs + sub tabs) ---------- */
-function applyFilter(track, test) {
-  let shown = 0;
-  track.querySelectorAll('.p-card').forEach((c) => {
-    const ok = test(c);
-    c.style.display = ok ? '' : 'none';
-    if (ok) shown++;
-  });
-  track.scrollLeft = 0;
-  let note = track.querySelector('.empty-note');
-  if (!shown && !note) track.insertAdjacentHTML('beforeend', '<p class="empty-note">More products coming soon.</p>');
-  if (shown && note) note.remove();
-  track.dispatchEvent(new Event('scroll'));
-}
-
-function initTabs() {
-  // Pill sub-tabs inside ghee / oil sections
-  document.querySelectorAll('.pill-tabs').forEach((group) => {
-    const track = document.querySelector(group.dataset.target);
-    group.querySelectorAll('.pill-tab').forEach((pill) => pill.addEventListener('click', () => {
-      group.querySelectorAll('.pill-tab').forEach((p) => p.classList.remove('active'));
-      pill.classList.add('active');
-      const s = pill.dataset.sub;
-      applyFilter(track, (c) => s === 'all' || c.dataset.sub === s);
-    }));
-  });
-}
-
 /* ---------- Carousels ---------- */
 function initCarousels() {
   document.querySelectorAll('.carousel').forEach((car) => {
@@ -310,5 +282,4 @@ renderCart();
 icons();
 initAnnounce();
 initHero();
-initTabs();
 initCarousels();
