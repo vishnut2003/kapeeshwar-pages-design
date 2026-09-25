@@ -255,16 +255,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 
 /* ---------- Category tabs ---------- */
-.categories { background: var(--cream); padding: 30px 0; border-bottom: 1px solid var(--border); }
-.cat-row { display: flex; gap: 14px; justify-content: center; overflow-x: auto; scrollbar-width: none; padding: 4px; }
-.cat-row::-webkit-scrollbar { display: none; }
-.cat-tab { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 118px; padding: 14px 8px; border-radius: var(--radius); font-family: var(--font-head); font-size: 14px; font-weight: 500; color: var(--text); transition: .25s; border: 2px solid transparent; }
-.cat-tab .cat-img { width: 76px; height: 76px; border-radius: 50%; background: var(--white); display: grid; place-items: center; box-shadow: var(--shadow-sm); overflow: hidden; transition: .25s; }
-.cat-tab .cat-img img { width: 62px; height: 62px; object-fit: contain; }
-.cat-tab .cat-img .lucide { width: 32px; height: 32px; color: var(--primary); }
-.cat-tab:hover .cat-img { transform: translateY(-3px); }
-.cat-tab.active { background: var(--white); border-color: var(--secondary); color: var(--primary); font-weight: 600; box-shadow: var(--shadow-sm); }
-.cat-tab.active .cat-img { background: var(--secondary-soft); }
 
 /* ---------- Sub tabs (pills) ---------- */
 .pill-tabs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; }
@@ -535,7 +525,6 @@ ul { list-style: none; margin: 0; padding: 0; }
   .carousel-track { grid-auto-columns: calc((100% - 14px) / 2.15); gap: 14px; }
   .testimonials .carousel-track { grid-auto-columns: 86%; }
   .car-arrow { display: none; }
-  .cat-row { justify-content: flex-start; }
   .newsletter-inner { flex-direction: column; text-align: center; }
   .bottom-nav {
     display: grid; grid-template-columns: repeat(5, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 70;
@@ -562,9 +551,6 @@ ul { list-style: none; margin: 0; padding: 0; }
   .slide-bg { aspect-ratio: 4 / 3; object-position: 80% center; }
   .slide .container { padding-top: 24px; padding-bottom: 50px; }
   .slide-text p.lead { font-size: 15px; margin: 16px auto 22px; }
-  .cat-tab { width: 92px; padding: 10px 4px; font-size: 13px; }
-  .cat-tab .cat-img { width: 62px; height: 62px; }
-  .cat-tab .cat-img img { width: 50px; height: 50px; }
   .p-body { padding: 12px; }
   .p-name { font-size: 14px; min-height: 38px; }
   .p-price .now { font-size: 17px; }

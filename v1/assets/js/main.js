@@ -90,23 +90,6 @@ function applyFilter(track, test) {
 }
 
 function initTabs() {
-  // Main category tabs above "Best Sellers": re-render the row from the full catalogue
-  const catTabs = document.querySelectorAll('.cat-tab');
-  const bestTrack = document.querySelector('#best-track');
-  catTabs.forEach((tab) => tab.addEventListener('click', () => {
-    catTabs.forEach((t) => t.classList.remove('active'));
-    tab.classList.add('active');
-    const f = tab.dataset.filter;
-    const list = f === 'all' ? PRODUCTS.filter((p) => p.best)
-      : f === 'deal' ? PRODUCTS.filter((p) => off(p) >= 20)
-      : PRODUCTS.filter((p) => p.cat === f);
-    bestTrack.innerHTML = list.map(cardHTML).join('');
-    bestTrack.scrollLeft = 0;
-    icons();
-    bestTrack.dispatchEvent(new Event('scroll'));
-    document.querySelector('#best-title').textContent = tab.dataset.title;
-  }));
-
   // Pill sub-tabs inside ghee / oil sections
   document.querySelectorAll('.pill-tabs').forEach((group) => {
     const track = document.querySelector(group.dataset.target);
