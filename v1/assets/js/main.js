@@ -3,66 +3,72 @@
    All data below is placeholder content for client review.
    ========================================================= */
 
-const img = (f) => 'images/claude-uploads/' + f;
 
 const PRODUCTS = [
   // ---- A2 Ghee ----
-  { id: 'g1', cat: 'ghee', sub: 'desi', name: 'Kapeeshwar A2 Desi Cow Ghee', size: '500 ml', price: 1199, mrp: 1399, rating: 4.8, reviews: 1248, tag: 'Best Seller', imgs: ['pack-ghee-jar.svg'], best: true },
-  { id: 'g2', cat: 'ghee', sub: 'desi', name: 'Kapeeshwar A2 Desi Cow Ghee', size: '1 L', price: 2249, mrp: 2699, rating: 4.9, reviews: 864, tag: 'Top Rated', imgs: ['pack-ghee-jar.svg'], best: true },
-  { id: 'g3', cat: 'ghee', sub: 'desi', name: 'Kapeeshwar A2 Desi Cow Ghee', size: '250 ml', price: 649, mrp: 749, rating: 4.7, reviews: 512, tag: 'Trial Pack', imgs: ['pack-ghee-jar.svg'] },
-  { id: 'g4', cat: 'ghee', sub: 'desi', name: 'Kapeeshwar A2 Desi Cow Ghee Tin', size: '5 L', price: 10499, mrp: 12999, rating: 4.8, reviews: 198, tag: 'Value Pack', imgs: ['pack-ghee-tin.svg'], best: true },
-  { id: 'g5', cat: 'ghee', sub: 'gir', name: 'Kapeeshwar A2 Gir Cow Ghee', size: '500 ml', price: 1499, mrp: 1799, rating: 4.9, reviews: 342, tag: 'New Launch', imgs: ['pack-ghee-jar.svg'], best: true },
-  { id: 'g6', cat: 'ghee', sub: 'gir', name: 'Kapeeshwar A2 Gir Cow Ghee Tin', size: '1 L', price: 2899, mrp: 3399, rating: 4.8, reviews: 156, tag: 'Selling Fast', imgs: ['pack-ghee-tin.svg'] },
+  { id: 'g1', cat: 'ghee', sub: 'desi', name: 'Kapeeshwar A2 Desi Cow Ghee', size: '500 ml', price: 1199, mrp: 1399, rating: 4.8, reviews: 1248, tag: 'Best Seller', best: true },
+  { id: 'g2', cat: 'ghee', sub: 'desi', name: 'Kapeeshwar A2 Desi Cow Ghee', size: '1 L', price: 2249, mrp: 2699, rating: 4.9, reviews: 864, tag: 'Top Rated', best: true },
+  { id: 'g3', cat: 'ghee', sub: 'desi', name: 'Kapeeshwar A2 Desi Cow Ghee', size: '250 ml', price: 649, mrp: 749, rating: 4.7, reviews: 512, tag: 'Trial Pack' },
+  { id: 'g4', cat: 'ghee', sub: 'desi', name: 'Kapeeshwar A2 Desi Cow Ghee Tin', size: '5 L', price: 10499, mrp: 12999, rating: 4.8, reviews: 198, tag: 'Value Pack', best: true },
+  { id: 'g5', cat: 'ghee', sub: 'gir', name: 'Kapeeshwar A2 Gir Cow Ghee', size: '500 ml', price: 1499, mrp: 1799, rating: 4.9, reviews: 342, tag: 'New Launch', best: true },
+  { id: 'g6', cat: 'ghee', sub: 'gir', name: 'Kapeeshwar A2 Gir Cow Ghee Tin', size: '1 L', price: 2899, mrp: 3399, rating: 4.8, reviews: 156, tag: 'Selling Fast' },
   // ---- Wood-pressed oils ----
-  { id: 'o1', cat: 'oil', sub: 'mustard', name: 'Wood-Pressed Mustard Oil', size: '1 L', price: 349, mrp: 420, rating: 4.7, reviews: 2104, tag: 'Best Seller', imgs: ['pack-oil-mustard.svg'], best: true },
-  { id: 'o2', cat: 'oil', sub: 'mustard', name: 'Wood-Pressed Mustard Oil Can', size: '5 L', price: 1599, mrp: 2050, rating: 4.7, reviews: 640, tag: 'Value Pack', imgs: ['pack-oil-can.svg'] },
-  { id: 'o3', cat: 'oil', sub: 'groundnut', name: 'Wood-Pressed Groundnut Oil', size: '1 L', price: 429, mrp: 520, rating: 4.8, reviews: 1320, tag: 'Top Rated', imgs: ['pack-oil-groundnut.svg'], best: true },
-  { id: 'o4', cat: 'oil', sub: 'coconut', name: 'Wood-Pressed Coconut Oil', size: '1 L', price: 549, mrp: 650, rating: 4.6, reviews: 488, tag: 'Selling Fast', imgs: ['pack-oil-coconut.svg'] },
-  { id: 'o5', cat: 'oil', sub: 'sesame', name: 'Wood-Pressed Sesame (Til) Oil', size: '1 L', price: 499, mrp: 599, rating: 4.7, reviews: 376, tag: 'New Launch', imgs: ['pack-oil-sesame.svg'] },
-  { id: 'o6', cat: 'oil', sub: 'groundnut', name: 'Wood-Pressed Groundnut Oil', size: '2 L', price: 829, mrp: 1040, rating: 4.8, reviews: 402, tag: '', imgs: ['pack-oil-groundnut.svg'] },
+  { id: 'o1', cat: 'oil', sub: 'mustard', name: 'Wood-Pressed Mustard Oil', size: '1 L', price: 349, mrp: 420, rating: 4.7, reviews: 2104, tag: 'Best Seller', best: true },
+  { id: 'o2', cat: 'oil', sub: 'mustard', name: 'Wood-Pressed Mustard Oil Can', size: '5 L', price: 1599, mrp: 2050, rating: 4.7, reviews: 640, tag: 'Value Pack' },
+  { id: 'o3', cat: 'oil', sub: 'groundnut', name: 'Wood-Pressed Groundnut Oil', size: '1 L', price: 429, mrp: 520, rating: 4.8, reviews: 1320, tag: 'Top Rated', best: true },
+  { id: 'o4', cat: 'oil', sub: 'coconut', name: 'Wood-Pressed Coconut Oil', size: '1 L', price: 549, mrp: 650, rating: 4.6, reviews: 488, tag: 'Selling Fast' },
+  { id: 'o5', cat: 'oil', sub: 'sesame', name: 'Wood-Pressed Sesame (Til) Oil', size: '1 L', price: 499, mrp: 599, rating: 4.7, reviews: 376, tag: 'New Launch' },
+  { id: 'o6', cat: 'oil', sub: 'groundnut', name: 'Wood-Pressed Groundnut Oil', size: '2 L', price: 829, mrp: 1040, rating: 4.8, reviews: 402, tag: '' },
   // ---- Combos ----
-  { id: 'c1', cat: 'combo', sub: 'combo', name: 'Ghee 500ml + Mustard Oil 1L', size: 'Combo', price: 1449, mrp: 1819, rating: 4.8, reviews: 286, tag: 'Most Loved', imgs: ['pack-ghee-jar.svg', 'pack-oil-mustard.svg'], best: true },
-  { id: 'c2', cat: 'combo', sub: 'combo', name: 'Kitchen Starter: Ghee 1L + Mustard + Groundnut', size: 'Pack of 3', price: 2899, mrp: 3639, rating: 4.9, reviews: 174, tag: 'Save 20%', imgs: ['pack-oil-mustard.svg', 'pack-ghee-jar.svg', 'pack-oil-groundnut.svg'] },
-  { id: 'c3', cat: 'combo', sub: 'combo', name: 'Oil Trio: Mustard + Groundnut + Sesame', size: 'Pack of 3', price: 1149, mrp: 1539, rating: 4.7, reviews: 211, tag: 'Save 25%', imgs: ['pack-oil-groundnut.svg', 'pack-oil-mustard.svg', 'pack-oil-sesame.svg'] },
-  { id: 'c4', cat: 'combo', sub: 'combo', name: 'Ghee Gift Pack: Desi Cow + Gir Cow 500ml', size: 'Pack of 2', price: 2549, mrp: 3198, rating: 4.9, reviews: 98, tag: 'Gift Pick', imgs: ['pack-ghee-jar.svg', 'pack-ghee-tin.svg'] },
+  { id: 'c1', cat: 'combo', sub: 'combo', name: 'Ghee 500ml + Mustard Oil 1L', size: 'Combo', price: 1449, mrp: 1819, rating: 4.8, reviews: 286, tag: 'Most Loved', best: true },
+  { id: 'c2', cat: 'combo', sub: 'combo', name: 'Kitchen Starter: Ghee 1L + Mustard + Groundnut', size: 'Pack of 3', price: 2899, mrp: 3639, rating: 4.9, reviews: 174, tag: 'Save 20%' },
+  { id: 'c3', cat: 'combo', sub: 'combo', name: 'Oil Trio: Mustard + Groundnut + Sesame', size: 'Pack of 3', price: 1149, mrp: 1539, rating: 4.7, reviews: 211, tag: 'Save 25%' },
+  { id: 'c4', cat: 'combo', sub: 'combo', name: 'Ghee Gift Pack: Desi Cow + Gir Cow 500ml', size: 'Pack of 2', price: 2549, mrp: 3198, rating: 4.9, reviews: 98, tag: 'Gift Pick' },
 ];
 
 const byId = Object.fromEntries(PRODUCTS.map((p) => [p.id, p]));
 const cart = {}; // id -> qty
 const inr = (n) => '₹' + n.toLocaleString('en-IN');
 const off = (p) => Math.round((1 - p.price / p.mrp) * 100);
-const stars = (r) => '★★★★★'.slice(0, Math.round(r)) + '☆☆☆☆☆'.slice(0, 5 - Math.round(r));
 
 /* ---------- Product card template ---------- */
+const CAT_LABEL = { ghee: 'A2 Ghee', oil: 'Wood-Pressed Oil', combo: 'Combo Pack' };
+// Client product photo, used for every product until per-product photos arrive
+const PRODUCT_PHOTO = 'images/user-uploads/home/product-image.png';
+
 function cardHTML(p) {
-  const media = p.imgs.length === 1 ? '' : p.imgs.length === 2 ? 'duo' : 'trio';
   const coupon = Math.round(p.price * 0.85);
   return `
   <article class="p-card" data-id="${p.id}" data-cat="${p.cat}" data-sub="${p.sub}" data-deal="${off(p) >= 20}">
-    <div class="p-media ${media}">
-      <span class="p-off">${off(p)}% OFF</span>
-      ${p.tag ? `<span class="p-tag"><i data-lucide="flame"></i>${p.tag}</span>` : ''}
-      ${p.imgs.map((f) => `<img src="${img(f)}" alt="${p.name}" loading="lazy">`).join('')}
-      <span class="p-size">${p.size}</span>
+    <div class="p-media">
+      <span class="p-off">${off(p)}%<small>OFF</small></span>
       <button class="p-wish" aria-label="Add to wishlist"><i data-lucide="heart"></i></button>
+      <img class="p-photo" src="${PRODUCT_PHOTO}" alt="${p.name}" loading="lazy">
+      ${p.tag ? `<span class="p-tag"><i data-lucide="sparkles"></i>${p.tag}</span>` : ''}
     </div>
     <div class="p-body">
-      <div class="p-rating"><span class="stars">${stars(p.rating)}</span> ${p.rating} (${p.reviews.toLocaleString('en-IN')})</div>
-      <h3 class="p-name">${p.name}</h3>
-      <div class="p-price">
-        <span class="now">${inr(p.price)}</span>
-        <span class="mrp">${inr(p.mrp)}</span>
-        <span class="unit">/ ${p.size}</span>
+      <div class="p-meta">
+        <span class="p-cat">${CAT_LABEL[p.cat]}</span>
+        <span class="p-rate"><i data-lucide="star"></i>${p.rating}<small>(${p.reviews.toLocaleString('en-IN')})</small></span>
       </div>
-      <div class="p-coupon">Best price <b>${inr(coupon)}</b> with code <b>PURE15</b></div>
-      <div class="p-actions">${actionHTML(p.id)}</div>
+      <h3 class="p-name">${p.name}</h3>
+      <span class="p-variant">${p.size}</span>
+      <div class="p-bottom">
+        <div class="p-price">
+          <span class="now">${inr(p.price)}</span>
+          <span class="mrp">${inr(p.mrp)}</span>
+          <span class="save">Save ${inr(p.mrp - p.price)}</span>
+        </div>
+        <div class="p-coupon"><i data-lucide="ticket-percent"></i>Get it for <b>${inr(coupon)}</b> with <b>PURE15</b></div>
+        <div class="p-actions">${actionHTML(p.id)}</div>
+      </div>
     </div>
   </article>`;
 }
 
 function actionHTML(id) {
   const q = cart[id] || 0;
-  if (!q) return `<button class="add-btn" data-add="${id}"><i data-lucide="shopping-bag"></i> ADD</button>`;
+  if (!q) return `<button class="add-btn" data-add="${id}"><i data-lucide="shopping-bag"></i> Add to Cart</button>`;
   return `<div class="qty"><button data-dec="${id}" aria-label="Decrease"><i data-lucide="minus"></i></button><span>${q}</span><button data-inc="${id}" aria-label="Increase"><i data-lucide="plus"></i></button></div>`;
 }
 
@@ -106,8 +112,9 @@ function initTabs() {
 function initCarousels() {
   document.querySelectorAll('.carousel').forEach((car) => {
     const track = car.querySelector('.carousel-track');
-    const prev = car.querySelector('.car-arrow.prev');
-    const next = car.querySelector('.car-arrow.next');
+    // Arrows live either inside the carousel or in the section header (data-car-prev/next="#track-id")
+    const prev = car.querySelector('.car-arrow.prev') || document.querySelector(`[data-car-prev="#${track.id}"]`);
+    const next = car.querySelector('.car-arrow.next') || document.querySelector(`[data-car-next="#${track.id}"]`);
     if (!prev || !next) return;
     const step = () => {
       const first = [...track.children].find((c) => c.offsetParent !== null);
@@ -242,7 +249,7 @@ function renderCart() {
   items.innerHTML = ids.map((id) => {
     const p = byId[id];
     return `<div class="cart-item">
-      <div class="ci-img"><img src="${img(p.imgs[0])}" alt=""></div>
+      <div class="ci-img"><img src="${PRODUCT_PHOTO}" alt=""></div>
       <div><h5>${p.name}</h5><div class="ci-price"><b>${inr(p.price)}</b> · ${p.size}</div></div>
       <div class="qty"><button data-dec="${id}"><i data-lucide="minus"></i></button><span>${cart[id]}</span><button data-inc="${id}"><i data-lucide="plus"></i></button></div>
     </div>`;
