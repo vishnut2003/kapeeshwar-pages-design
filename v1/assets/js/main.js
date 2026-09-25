@@ -161,24 +161,13 @@ function initHero() {
   if (!hero) return;
   const track = hero.querySelector('.hero-track');
   const slides = hero.querySelectorAll('.slide');
-  const dotsWrap = hero.querySelector('.hero-dots');
   let i = 0, timer;
-  slides.forEach((_, n) => {
-    const b = document.createElement('button');
-    b.setAttribute('aria-label', 'Go to slide ' + (n + 1));
-    b.addEventListener('click', () => go(n, true));
-    dotsWrap.appendChild(b);
-  });
-  const dots = dotsWrap.querySelectorAll('button');
   function go(n, user) {
     i = (n + slides.length) % slides.length;
     track.style.transform = `translateX(-${i * 100}%)`;
-    dots.forEach((d, k) => d.classList.toggle('active', k === i));
     if (user) restart();
   }
   function restart() { clearInterval(timer); timer = setInterval(() => go(i + 1), 5500); }
-  hero.querySelector('.hero-arrow.prev').addEventListener('click', () => go(i - 1, true));
-  hero.querySelector('.hero-arrow.next').addEventListener('click', () => go(i + 1, true));
 
   // swipe
   let x0 = null;
@@ -189,6 +178,17 @@ function initHero() {
     if (Math.abs(dx) > 50) go(i + (dx < 0 ? 1 : -1), true);
     x0 = null;
   });
+
+  // Fit the slide to the first fold: viewport height minus the bars above the hero
+  const fit = () => {
+    const top = hero.getBoundingClientRect().top + window.scrollY;
+    hero.style.setProperty('--hero-h', Math.max(0, window.innerHeight - top) + 'px');
+  };
+  fit();
+  window.addEventListener('resize', fit);
+  window.addEventListener('load', fit);
+  if (document.fonts) document.fonts.ready.then(fit);
+
   go(0);
   restart();
 }
@@ -223,6 +223,9 @@ function initAnnounce() {
 const FREE_SHIP = 999;
 
 function setQty(id, q) {
+  if (q > (cart[id] || 0)) {
+    document.querySelectorAll('.cart-btn').forEach((b) => { b.classList.remove('pulse'); void b.offsetWidth; b.classList.add('pulse'); });
+  }
   if (q <= 0) delete cart[id]; else cart[id] = q;
   document.querySelectorAll(`.p-card[data-id="${id}"] .p-actions`).forEach((el) => { el.innerHTML = actionHTML(id); });
   renderCart();
