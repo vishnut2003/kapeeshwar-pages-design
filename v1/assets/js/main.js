@@ -84,9 +84,9 @@ function icons() { if (window.lucide) lucide.createIcons(); }
 function initCarousels() {
   document.querySelectorAll('.carousel').forEach((car) => {
     const track = car.querySelector('.carousel-track');
-    // Arrows live either inside the carousel or in the section header (data-car-prev/next="#track-id")
-    const prev = car.querySelector('.car-arrow.prev') || document.querySelector(`[data-car-prev="#${track.id}"]`);
-    const next = car.querySelector('.car-arrow.next') || document.querySelector(`[data-car-next="#${track.id}"]`);
+    // Arrows live in the section header (data-car-prev/next="#track-id")
+    const prev = document.querySelector(`[data-car-prev="#${track.id}"]`);
+    const next = document.querySelector(`[data-car-next="#${track.id}"]`);
     if (!prev || !next) return;
     const step = () => {
       const first = [...track.children].find((c) => c.offsetParent !== null);
