@@ -148,9 +148,8 @@ ul { list-style: none; margin: 0; padding: 0; }
 .header { position: sticky; top: 0; z-index: 50; background: var(--white); border-bottom: 1px solid var(--border); transition: box-shadow .25s; }
 .header.scrolled { box-shadow: var(--shadow-sm); }
 .header-inner { height: var(--header-h); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.logo { display: flex; flex-direction: column; line-height: .85; font-family: var(--font-logo); color: var(--primary); flex-shrink: 0; }
-.logo-1 { font-size: 30px; }
-.logo-2 { font-size: 21px; padding-left: 26px; }
+.logo { display: block; flex-shrink: 0; }
+.logo img { height: 52px; width: auto; }
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav > li { position: relative; }
 .nav > li > a { display: flex; align-items: center; gap: 4px; padding: 10px 12px; font-size: 14.5px; font-weight: 500; color: #4a403a; border-radius: 8px; transition: .2s; }
@@ -558,8 +557,8 @@ ul { list-style: none; margin: 0; padding: 0; }
 /* ---------- Footer ---------- */
 .footer { background: var(--dark-2); color: #cbbba8; padding-top: 60px; font-size: 14px; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.3fr; gap: 40px; padding-bottom: 44px; }
-.footer .logo { margin-bottom: 16px; }
-.footer .logo-1, .footer .logo-2 { color: var(--secondary); }
+.footer .logo { margin-bottom: 18px; }
+.footer .logo img { height: 64px; }
 .footer h4 { color: var(--white); font-size: 16px; font-weight: 600; margin-bottom: 18px; position: relative; padding-bottom: 10px; }
 .footer h4::after { content: ""; position: absolute; left: 0; bottom: 0; width: 34px; height: 2px; background: var(--secondary); }
 .footer li { margin-bottom: 10px; }
@@ -701,8 +700,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   .announce .xs-hide { display: none; }
   .announce-nav { display: none; }
   .a-ico { width: 20px; height: 20px; }
-  .logo-1 { font-size: 25px; }
-  .logo-2 { font-size: 17px; padding-left: 20px; }
+  .logo img { height: 42px; }
   .icon-btn { width: 38px; height: 38px; }
   .header-icons .hide-sm { display: none; }
   .slide-bg { aspect-ratio: 4 / 3; object-position: 80% center; }
