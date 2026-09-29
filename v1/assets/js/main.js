@@ -117,29 +117,10 @@ function initCarousels() {
   });
 }
 
-/* ---------- Hero slider ---------- */
+/* ---------- Hero ---------- */
 function initHero() {
   const hero = document.querySelector('.hero');
   if (!hero) return;
-  const track = hero.querySelector('.hero-track');
-  const slides = hero.querySelectorAll('.slide');
-  let i = 0, timer;
-  function go(n, user) {
-    i = (n + slides.length) % slides.length;
-    track.style.transform = `translateX(-${i * 100}%)`;
-    if (user) restart();
-  }
-  function restart() { clearInterval(timer); timer = setInterval(() => go(i + 1), 5500); }
-
-  // swipe
-  let x0 = null;
-  hero.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
-  hero.addEventListener('touchend', (e) => {
-    if (x0 === null) return;
-    const dx = e.changedTouches[0].clientX - x0;
-    if (Math.abs(dx) > 50) go(i + (dx < 0 ? 1 : -1), true);
-    x0 = null;
-  });
 
   // Fit the slide to the first fold: viewport height minus the bars above the hero
   const fit = () => {
@@ -150,9 +131,6 @@ function initHero() {
   window.addEventListener('resize', fit);
   window.addEventListener('load', fit);
   if (document.fonts) document.fonts.ready.then(fit);
-
-  go(0);
-  restart();
 }
 
 /* ---------- Announcement rotation ---------- */

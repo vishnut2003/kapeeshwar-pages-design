@@ -10,7 +10,7 @@
 <rect x="118" y="52" width="164" height="48" rx="12" fill="url(#lid)"/>
 <rect x="118" y="92" width="164" height="10" rx="4" fill="#000"/>
 <ellipse cx="200" cy="232" rx="98" ry="62" fill="#FFF8EC" opacity=".93"/>
-<text x="200" y="222" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="30" fill="#BB1D1D">Kapeeshwar</text>
-<text x="200" y="246" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="17" fill="#BB1D1D">Ayurveda.</text>
+<text x="200" y="222" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="30" fill="#D32F2F">Kapeeshwar</text>
+<text x="200" y="246" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="17" fill="#D32F2F">Ayurveda.</text>
 <text x="200" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="#1F2E5A">A2 DESI COW GHEE</text>
 </svg>

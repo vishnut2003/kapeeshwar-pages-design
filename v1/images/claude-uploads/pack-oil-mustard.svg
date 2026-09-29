@@ -2,14 +2,14 @@
 <defs><linearGradient id="o" x1="0" x2="1"><stop offset="0" stop-color="#9C5E05"/><stop offset=".35" stop-color="#E3A21A"/><stop offset="1" stop-color="#9C5E05"/></linearGradient>
 <linearGradient id="hl" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
 <ellipse cx="200" cy="376" rx="80" ry="10" fill="#000" opacity=".12"/>
-<rect x="176" y="18" width="48" height="34" rx="6" fill="#BB1D1D"/>
+<rect x="176" y="18" width="48" height="34" rx="6" fill="#D32F2F"/>
 <rect x="172" y="48" width="56" height="8" rx="3" fill="#8f1414"/>
 <path d="M182 56 h36 v40 c0 18 52 38 52 78 v186 c0 10 -8 16 -18 16 h-104 c-10 0 -18 -6 -18 -16 v-186 c0 -40 52 -60 52 -78z" fill="url(#o)" stroke="#9C5E05" stroke-width="2"/>
 <rect x="142" y="170" width="16" height="170" rx="8" fill="url(#hl)"/>
 <rect x="130" y="196" width="140" height="120" rx="8" fill="#FFF8EC"/>
 <rect x="130" y="196" width="140" height="8" rx="3" fill="#F1BF26"/>
-<text x="200" y="232" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="22" fill="#BB1D1D">Kapeeshwar</text>
-<text x="200" y="250" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12" fill="#BB1D1D">Ayurveda.</text>
+<text x="200" y="232" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="22" fill="#D32F2F">Kapeeshwar</text>
+<text x="200" y="250" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12" fill="#D32F2F">Ayurveda.</text>
 <text x="200" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="#2B1D12">MUSTARD OIL</text>
 <text x="200" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6b5a4a">WOOD-PRESSED OIL</text>
 </svg>

@@ -33,7 +33,7 @@ v1/                     # Design round 1 (new rounds → v2/, v3/ … copy forwa
 
 - **Mood:** premium, warm, traditional and Ayurvedic, handcrafted, pure.
 - **Colors (confirmed by client):**
-  - Primary: `#BB1D1D` (brand red): logo, CTAs, key accents
+  - Primary: `#D32F2F` (brand red): logo, CTAs, key accents. It was originally `#BB1D1D`; the client found that too dark, so it was lightened.
   - Secondary: `#F1BF26` (ghee gold): headings on dark backgrounds, icon circles, highlight bars
   - Supporting neutrals (from the creative, not client-specified): deep brown/near-black backgrounds (~`#1E140C`–`#2B1D12`), white/cream text on dark backgrounds
 - **Type (confirmed by client):**
